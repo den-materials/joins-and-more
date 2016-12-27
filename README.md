@@ -73,6 +73,8 @@ Notice that we needed to create an entirely new table for this, one that has a r
 
 >**Note:** Now I know what you're thinking.  Why don't we just put each item in a column in the order?  Well, how many items can there be in an order?  So do we need 8?  16?  Sometimes only 4?  This is the beauty of a table like the one above.  It keeps us organized, and keeps us from filling our tables with empty space.
 
+![](manyToMany_dia.png)
+
 <!--Catch-phrase with primary key, foreign key, one-to-many, many-to-many -->
 
 <!--3:15 5 minutes -->
