@@ -94,25 +94,29 @@ In order to get information from multiple tables (relations), we need to use a J
 First, let us set up our tables.  Open up `psql` and run the following:
 
 ```
+CREATE DATABASE advanced_sql;
+
+\c advanced_sql;
+
 CREATE TABLE customers (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT PRIMARY KEY,
     customer_name VARCHAR(100)
 );
  
 CREATE TABLE orders (
-    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT PRIMARY KEY,
     customer_id INT,
-    amount DOUBLE,
+    amount DECIMAL,
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
  
-INSERT INTO `customers` (`customer_id`, `customer_name`) VALUES
+INSERT INTO customers (customer_id, customer_name) VALUES
 (1, 'Guy'),
 (2, 'Brian'),
 (3, 'Gisella'),
 (4, 'Erik');
  
-INSERT INTO `orders` (`order_id`, `customer_id`, `amount`) VALUES
+INSERT INTO orders (order_id, customer_id, amount) VALUES
 (1, 1, 19.99),
 (2, 1, 35.99),
 (3, 3, 17.99),
@@ -125,7 +129,7 @@ INSERT INTO `orders` (`order_id`, `customer_id`, `amount`) VALUES
 
 If we are looking to find the intersection of our order and customer tables (i.e. all orders placed by each customer), we would use an Inner JOIN which is written like this:
 
-`SELECT * FROM customers JOIN orders WHERE customers.customer_id = orders.customer_id`
+`SELECT * FROM customers JOIN orders ON (customers.customer_id = orders.customer_id);`
 
 This query is represented by #2 below:
 
@@ -135,7 +139,7 @@ This query is represented by #2 below:
 
 If we still want to see results even if there is no match from the second table (orders), we would use a Left JOIN, which is written like this:
 
-`SELECT * FROM customers LEFT OUTER JOIN orders WHERE customers.customer_id = orders.customer_id`
+`SELECT * FROM customers LEFT OUTER JOIN orders ON (customers.customer_id = orders.customer_id);`
 
 This query is represented by #1 above.
 
@@ -143,13 +147,13 @@ This query is represented by #1 above.
 
 If we still want to see results even if there is no match from the first table (customers), we would use a Right JOIN, which is written like this:
 
-`SELECT * FROM customers RIGHT OUTER JOIN orders WHERE customers.customer_id = orders.customer_id`
+`SELECT * FROM customers RIGHT OUTER JOIN orders ON (customers.customer_id = orders.customer_id);`
+
+Hm...looks the same as the inner JOIN, right?  That's because there are no orders without a customer.  However, there are some customers with no orders.  And as my friend Geoff says when he turns left on red, "Right and left are all relative".  Let's flip the venn diagram, and we'll see something different.
+
+`SELECT * FROM orders RIGHT OUTER JOIN customers ON (customers.customer_id = orders.customer_id);`
 
 This query is represented by #3 above.
-
-### Cleaning it up
-
-Would you like to make these queries even shorter?  Then look at the top resource below for some more information on the `ON` and `USING` keywords.
 
 <!--Run through first couple library_sql basic (non JOIN) and advanced (JOIN) exercises -->
 
