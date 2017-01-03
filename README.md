@@ -31,6 +31,7 @@ In other words:
 
 ![](foreignKey.gif)
 
+<!--actually 3:12 -->
 ## Relationships
 
 **Relationships** are the established associations between two or more tables. Relationships are based on common fields from more than one table, often involving primary and foreign keys.
@@ -79,11 +80,15 @@ Notice that we needed to create an entirely new table for this, one that has a r
 
 <!--3:15 5 minutes -->
 
+<!--Actually 3:32-->
+
 ### Normalization
 
 Database **normalization** is the process of organizing the columns (attributes) and tables (relations) of a relational database to reduce data redundancy and improve data integrity.
 
 In other words, a well **normalized** database does not store the same information twice, and takes the fewest jumps possible to get the information we need.  This requires a well-thought-out use of the relationships listed above.
+
+<!--half-mast for rest -->
 
 <!--3:20 5 minutes -->
 
@@ -91,7 +96,7 @@ In other words, a well **normalized** database does not store the same informati
 
 In order to get information from multiple tables (relations), we need to use a JOIN query.
 
-First, let us set up our tables.  Open up `psql` and run the following:
+First, let us set up our tables.  We will open up `psql` and run the following:
 
 ```
 CREATE DATABASE advanced_sql;
