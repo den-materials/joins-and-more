@@ -15,7 +15,7 @@
 - **Use** JOIN to combine tables in a SELECT
 - **Describe** what it means for a database to be normalized
 
-<!--3:05 10 minutes -->
+<!--3:05 15 minutes -->
 
 ## Vocabulary
 
@@ -78,9 +78,9 @@ Notice that we needed to create an entirely new table for this, one that has a r
 
 <!--Catch-phrase with primary key, foreign key, one-to-many, many-to-many -->
 
-<!--3:15 5 minutes -->
+<!--3:20 5 minutes -->
 
-<!--Actually 3:32-->
+<!--Actually 3:32 WDI2-->
 
 ### Normalization
 
@@ -90,7 +90,7 @@ In other words, a well **normalized** database does not store the same informati
 
 <!--half-mast for rest -->
 
-<!--3:20 5 minutes -->
+<!--3:25 10 minutes -->
 
 ## JOIN Queries
 
@@ -116,10 +116,10 @@ CREATE TABLE orders (
 );
  
 INSERT INTO customers (customer_id, customer_name) VALUES
-(1, 'Guy'),
-(2, 'Brian'),
-(3, 'Gisella'),
-(4, 'Erik');
+(1, 'Bobby'),
+(2, 'Billy'),
+(3, 'Jacy'),
+(4, 'Jess');
  
 INSERT INTO orders (order_id, customer_id, amount) VALUES
 (1, 1, 19.99),
@@ -128,7 +128,7 @@ INSERT INTO orders (order_id, customer_id, amount) VALUES
 (4, 4, 12.99);
 ```
 
-<!--3:25 10 minutes -->
+<!--3:35 10 minutes -->
 
 ### Inner JOIN
 
