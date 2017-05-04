@@ -1,3 +1,5 @@
+<!--WDI3 3:02 -->
+
 <!--3:00 5 minutes -->
 
 <!--Hook: Wouldn't it be amazing if we could keep all our data nice and organized inside one table?  So much easier.  Well, unfortunately, that's not the way the world works.  The good news is that it is a problem that SQL is especially good at solving.  So here we go... -->
@@ -15,6 +17,7 @@
 - **Use** JOIN to combine tables in a SELECT
 - **Describe** what it means for a database to be normalized
 
+<!-- 3:04 WDI3 -->
 <!--3:05 15 minutes -->
 
 ## Vocabulary
@@ -80,7 +83,7 @@ Notice that we needed to create an entirely new table for this, one that has a r
 
 <!--3:20 5 minutes -->
 
-<!--Actually 3:32 WDI2-->
+<!--Actually 3:32 WDI2 and WDI3-->
 
 ### Normalization
 
@@ -90,6 +93,7 @@ In other words, a well **normalized** database does not store the same informati
 
 <!--half-mast for rest -->
 
+<!--3:25 WDI3 -->
 <!--3:25 10 minutes -->
 
 ## JOIN Queries
@@ -128,6 +132,7 @@ INSERT INTO orders (order_id, customer_id, amount) VALUES
 (4, 4, 12.99);
 ```
 
+<!--3:34 WDI3 -->
 <!--3:35 10 minutes -->
 
 ### Inner JOIN
@@ -160,6 +165,7 @@ Hm...looks the same as the inner JOIN, right?  That's because there are no order
 
 This query is represented by #3 above.
 
+<!--3:46 WDI3 -->
 <!--Run through first couple library_sql basic (non JOIN) and advanced (JOIN) exercises -->
 
 ## Resources
