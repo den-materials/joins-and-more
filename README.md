@@ -1,5 +1,5 @@
 <!--WDI3 3:02 -->
-
+<!--WDI4 3:04 -->
 <!--3:00 5 minutes -->
 
 <!--Hook: Wouldn't it be amazing if we could keep all our data nice and organized inside one table?  So much easier.  Well, unfortunately, that's not the way the world works.  The good news is that it is a problem that SQL is especially good at solving.  So here we go... -->
@@ -35,6 +35,7 @@ In other words:
 ![](foreignKey.gif)
 
 <!--actually 3:12 -->
+<!--WDI4 3:08 -->
 ## Relationships
 
 **Relationships** are the established associations between two or more tables. Relationships are based on common fields from more than one table, often involving primary and foreign keys.
@@ -91,6 +92,7 @@ Database **normalization** is the process of organizing the columns (attributes)
 
 In other words, a well **normalized** database does not store the same information twice, and takes the fewest jumps possible to get the information we need.  This requires a well-thought-out use of the relationships listed above.
 
+<!--WDI4 3:26 -->
 <!--half-mast for rest -->
 
 <!--3:25 WDI3 -->
@@ -132,6 +134,9 @@ INSERT INTO orders (order_id, customer_id, amount) VALUES
 (4, 4, 12.99);
 ```
 
+
+<!--WDI4 3:34 turning over to devs-->
+<!--WDI4 coming back 3:40 -->
 <!--3:34 WDI3 -->
 <!--3:35 10 minutes -->
 
@@ -164,6 +169,8 @@ Hm...looks the same as the inner JOIN, right?  That's because there are no order
 `SELECT * FROM orders RIGHT OUTER JOIN customers ON (customers.customer_id = orders.customer_id);`
 
 This query is represented by #3 above.
+
+<!--3:47 WDI4 turning over to devs, coming back 3:52, ending 3:54 -->
 
 <!--3:46 WDI3 -->
 <!--Run through first couple library_sql basic (non JOIN) and advanced (JOIN) exercises -->
