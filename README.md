@@ -1,3 +1,4 @@
+<!--WDI5 3:03  -->
 <!--WDI3 3:02 -->
 <!--WDI4 3:04 -->
 <!--3:00 5 minutes -->
@@ -18,6 +19,7 @@
 - **Describe** what it means for a database to be normalized
 
 <!-- 3:04 WDI3 -->
+<!--WDI5 3:05 -->
 <!--3:05 15 minutes -->
 
 ## Vocabulary
@@ -34,6 +36,7 @@ In other words:
 
 ![](foreignKey.gif)
 
+<!--WDI5 3:08 -->
 <!--actually 3:12 -->
 <!--WDI4 3:08 -->
 ## Relationships
@@ -82,6 +85,7 @@ Notice that we needed to create an entirely new table for this, one that has a r
 
 <!--Catch-phrase with primary key, foreign key, one-to-many, many-to-many -->
 
+<!--WDI5 3:30  -->
 <!--3:20 5 minutes -->
 
 <!--Actually 3:32 WDI2 and WDI3-->
@@ -134,7 +138,7 @@ INSERT INTO orders (order_id, customer_id, amount) VALUES
 (4, 4, 12.99);
 ```
 
-
+<!--WDI5 3:45  -->
 <!--WDI4 3:34 turning over to devs-->
 <!--WDI4 coming back 3:40 -->
 <!--3:34 WDI3 -->
@@ -172,6 +176,7 @@ This query is represented by #3 above.
 
 <!--3:47 WDI4 turning over to devs, coming back 3:52, ending 3:54 -->
 
+<!--WDI5 coming back 3:57, then HW intro-->
 <!--3:46 WDI3 -->
 <!--Run through first couple library_sql basic (non JOIN) and advanced (JOIN) exercises -->
 
