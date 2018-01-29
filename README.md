@@ -1,6 +1,7 @@
 <!--WDI5 3:03  -->
 <!--WDI3 3:02 -->
 <!--WDI4 3:04 -->
+<!--WDI6 3:06 -->
 <!--3:00 5 minutes -->
 
 <!--Hook: Wouldn't it be amazing if we could keep all our data nice and organized inside one table?  So much easier.  Well, unfortunately, that's not the way the world works.  The good news is that it is a problem that SQL is especially good at solving.  So here we go... -->
@@ -100,6 +101,7 @@ In other words, a well **normalized** database does not store the same informati
 <!--half-mast for rest -->
 
 <!--3:25 WDI3 -->
+<!--WDI6 3:29 -->
 <!--3:25 10 minutes -->
 
 ## JOIN Queries
@@ -138,6 +140,7 @@ INSERT INTO orders (order_id, customer_id, amount) VALUES
 (4, 4, 12.99);
 ```
 
+<!--WDI6 3:37 -->
 <!--WDI5 3:45  -->
 <!--WDI4 3:34 turning over to devs-->
 <!--WDI4 coming back 3:40 -->
@@ -153,6 +156,8 @@ If we are looking to find the intersection of our order and customer tables (i.e
 This query is represented by #2 below:
 
 ![](inner_join_diagram.gif)
+
+<!--WDI6 3:48  -->
 
 ### Left Outer JOIN
 
@@ -176,6 +181,7 @@ This query is represented by #3 above.
 
 <!--3:47 WDI4 turning over to devs, coming back 3:52, ending 3:54 -->
 
+<!--WDI6 3:56, quick wrap up, then HW -->
 <!--WDI5 coming back 3:57, then HW intro-->
 <!--3:46 WDI3 -->
 <!--Run through first couple library_sql basic (non JOIN) and advanced (JOIN) exercises -->
